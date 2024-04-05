@@ -16,3 +16,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get("/secondaPagina", function() {
+
+    return view("secondaPagina");
+
+})->name('seconda');
+
+Route::get("/terzaPagina", function() {
+
+    return view("terzaPagina");
+
+})->name('terza');
+
+Route::get("/quartaPagina", function() {
+
+    return view("quartaPagina");
+
+})->name('quarta');
+
+Route::get("/quintaPagina", function() {
+
+    return view("quintaPagina");
+
+})->name('quinta');
